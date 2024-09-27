@@ -1,0 +1,187 @@
+
+Invalid JSON data: 
+Temperature: 75.43°F, Luminosity: 16.0 lux
+Invalid JSON data: 
+Temperature: 75.43°F, Luminosity: 18.0 lux
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.43°F, Luminosity: 18.0 lux
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.43°F, Luminosity: 17.0 lux
+Invalid JSON data: 
+Traceback (most recent call last):
+  File "/home/rami035/Arduino/import_serial.py", line 55, in <module>
+    data = ser.readline().decode('utf-8').rstrip()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 577, in read
+    raise SerialException(
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Invalid JSON data: 
+Temperature: 75.54°F, Luminosity: 15.0 lux
+Invalid JSON data: 
+Temperature: 75.65°F, Luminosity: 16.0 lux
+Invalid JSON data: :1097}
+Invalid JSON data: 
+Invalid JSON data: ame":"ambient_temp","unit":"C","value":24.25,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.65°F, Luminosity: 12.0 lux
+Invalid JSON data: 
+Temperature: 75.76°F, Luminosity: 9.0 lux
+Invalid JSON data: 1094}
+Invalid JSON data: 
+Invalid JSON data: Name":"ambient_temp","unit":"C","value":24.31,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.76°F, Luminosity: 9.0 lux
+Invalid JSON data: :1098}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.76°F, Luminosity: 12.0 lux
+Invalid JSON data: :1102}
+Invalid JSON data: 
+Invalid JSON data: ame":"ambient_temp","unit":"C","value":24.31,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.76°F, Luminosity: 17.0 lux
+Invalid JSON data: :1101}
+Invalid JSON data: 
+Invalid JSON data: ame":"ambient_temp","unit":"C","value":24.31,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.76°F, Luminosity: 16.0 lux
+Invalid JSON data: C","value":24.38,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Invalid JSON data: ame":"ambient_temp","unit":"C","value":24.38,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.88°F, Luminosity: 14.0 lux
+Invalid JSON data: 
+Temperature: 75.88°F, Luminosity: 23.0 lux
+Invalid JSON data: 
+Temperature: 75.88°F, Luminosity: 20.0 lux
+Invalid JSON data: 
+Temperature: 75.88°F, Luminosity: 13.0 lux
+Invalid JSON data: :1097}
+Invalid JSON data: 
+Invalid JSON data: ame":"ambient_temp","unit":"C","value":24.38,"cs":1293}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 75.88°F, Luminosity: 12.0 lux
+Invalid JSON data: 
+Temperature: 75.88°F, Luminosity: 13.0 lux
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 187, in __call__
+    response = self.session.request(
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rami035/Arduino/import_serial.py", line 14, in <module>
+    sheet = client.open('plant_data_inator').sheet1
+  File "/usr/local/lib/python3.9/dist-packages/gspread/client.py", line 132, in open
+    spreadsheet_files, response = self._list_spreadsheet_files(title, folder_id)
+  File "/usr/local/lib/python3.9/dist-packages/gspread/client.py", line 105, in _list_spreadsheet_files
+    response = self.http_client.request("get", url, params=params)
+  File "/usr/local/lib/python3.9/dist-packages/gspread/http_client.py", line 114, in request
+    response = self.session.request(
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 534, in request
+    self.credentials.before_request(auth_request, method, url, request_headers)
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/credentials.py", line 239, in before_request
+    self._blocking_refresh(request)
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/credentials.py", line 202, in _blocking_refresh
+    self.refresh(request)
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/service_account.py", line 448, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 298, in jwt_grant
+    response_data = _token_endpoint_request(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 258, in _token_endpoint_request
+    response_status_ok, response_data, retryable_error = _token_endpoint_request_no_throw(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 191, in _token_endpoint_request_no_throw
+    response = request(
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 193, in __call__
+    raise new_exc from caught_exc
+google.auth.exceptions.TransportError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Invalid JSON data: 
+Temperature: 93.99°F, Luminosity: 2320.0 lux
+Invalid JSON data: 
+Traceback (most recent call last):
+  File "/home/rami035/Arduino/import_serial.py", line 67, in <module>
+    sheet.insert_row([latest_timestamp, latest_temp, latest_lux], 2)
+  File "/usr/local/lib/python3.9/dist-packages/gspread/worksheet.py", line 1893, in insert_row
+    return self.insert_rows(
+  File "/usr/local/lib/python3.9/dist-packages/gspread/worksheet.py", line 1967, in insert_rows
+    res = self.client.values_append(self.spreadsheet_id, range_label, params, body)
+  File "/usr/local/lib/python3.9/dist-packages/gspread/http_client.py", line 191, in values_append
+    r = self.request("post", url, params=params, json=body)
+  File "/usr/local/lib/python3.9/dist-packages/gspread/http_client.py", line 128, in request
+    raise APIError(response)
+  File "/usr/local/lib/python3.9/dist-packages/gspread/exceptions.py", line 45, in __init__
+    self.error: Mapping[str, Any] = response.json()["error"]
+  File "/usr/lib/python3/dist-packages/requests/models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3/dist-packages/simplejson/__init__.py", line 525, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 370, in decode
+    obj, end = self.raw_decode(s)
+  File "/usr/lib/python3/dist-packages/simplejson/decoder.py", line 400, in raw_decode
+    return self.scan_once(s, idx=_w(s, idx).end())
+simplejson.errors.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Invalid JSON data: ":1281}
+Invalid JSON data: 
+Invalid JSON data: me":"ambient_temp","unit":"C","value":29.50,"cs":1299}
+Invalid JSON data: 
+Invalid JSON data: 
+Temperature: 85.10°F, Luminosity: 196.0 lux
